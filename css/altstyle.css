@@ -1,0 +1,145 @@
+/* Robert Desjardins */
+
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+    height: auto;
+    font-size: 18px;
+    background: linear-gradient(-45deg, #23A6D5, #23D5AB);
+}
+main {
+    background-color: #eee;
+    padding: 1rem 0 0 0;
+    max-width: 1000px;
+    margin: auto;
+    border-radius: 8px;
+    padding-bottom: 2rem;
+    -webkit-box-shadow: 30px 0 40px rgba(0, 0, 0, 0.15), -30px 0 40px rgba(0, 0, 0, 0.15);
+    box-shadow: 30px 0 40px rgba(0, 0, 0, 0.15), -30px 0 40px rgba(0, 0, 0, 0.15);
+}
+
+/* General */
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 8px;
+    
+    
+}
+a {
+    text-decoration: none;
+}
+
+/* Navigation */
+
+header {
+    background-color: darkslategrey;
+    height: 3rem;
+    width: 100vw;
+    position: fixed;
+}
+header #branding {
+    float: left;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding-left: 2rem;
+}
+header nav {
+    padding-top: 1rem;
+    float: right;
+}
+header nav ul {
+    margin: auto;
+}
+header nav ul li {
+    display: inline;
+}
+header nav ul a {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 0 1.3rem 0 1.3rem;
+    -webkit-transition-duration: 300ms;
+    transition-duration: 300ms;
+}
+header nav ul a:hover {
+    color: orange;
+}
+
+/* About */
+
+#about #about-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 50px;
+    
+}
+
+#about #about-container p::first-letter {
+  color: green;
+  font-size: xx-large;
+    
+}
+#about #about-text {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 60vw;
+    flex: 0 1 60vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-right: 1rem;
+}
+#about #about-img {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 40vw;
+    flex: 0 1 40vw;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Resources */
+
+#resources {
+    padding-top: 30px;
+    text-align: center;
+}
+
+
+#resources a:hover{
+    color: orange;
+}
+
+a:link {
+    
+    color: green;
+}
+
+/* Footer */
+
+footer {
+    position: fixed;
+    height: 3rem;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: darkslategrey;
+    color: white;
+    text-align: center;
+}
+
+/* Screen Sizes 1000px and under */
+
+
+/*# sourceMappingURL=style.css.map */

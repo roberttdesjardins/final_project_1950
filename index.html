@@ -1,0 +1,78 @@
+<!-- Robert Desjardins -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/students/rdesjardins8/css/style.css" title="Default">
+  <link rel="stylesheet" href="/students/rdesjardins8/css/altstyle.css" title="Eduardo's Style">
+  <title>Robert Desjardins</title>
+</head>
+
+<body>
+  <header>
+    <div id="branding">
+      <p>Robert Desjardins</p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="/students/rdesjardins8/hw02_html5/index.html">HTML5</a></li>
+        <li><a href="http://bcitcomp.ca/students/ecastrodacruz/">CSS</a></li>
+        <li><a href="/students/rdesjardins8/hw04_layout/index.html">Layout</a></li>
+        <li><a href="/students/rdesjardins8/hw05_responsive/index.html">Responsive Layout</a></li>
+        <li><a href="/students/rdesjardins8/hw06_jquery/index.html">JQuery</a></li>
+        <li><a href="not_a_valid_path.html">Server-side</a></li>
+        <li><a href="/students/rdesjardins8/hw08_templates/index.html">Templates</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="about">
+      <div id="about-container" class="container">
+        <div id="about-text">
+          <h2>About Me</h2>
+          <p>My name is Robert Desjardins. I graduated from UBC in Business and Computer Science and I'm currently
+            taking Applied Web Development at BCIT while applying for jobs.</p>
+          <p>
+            I was born an raised in Vancouver and I love this city! My interests include film, camping, working out,
+            and video games. I have a toy poodle named Moxie who is the cutest dog ever.
+          </p>
+          <?php
+            date_default_timezone_set("Canada/Pacific");
+            echo date(' F jS\, Y\, h:i A');
+          ?>
+        </div>
+        <img id="about-img" src="/students/rdesjardins8/img/moxie.png" alt="A picture of my dog Moxie">
+      </div>
+    </section>
+    <section id="resources">
+      <div class="container">
+        <h2>My Favourite Websites and Resources</h2>
+        <div class="container">
+          <h3><a href="https://www.reddit.com/r/web_design/wiki/faq" target="_blank">Reddit Web Design</a></h3>
+          <p>Description: Reddit can be a pretty good resource for web design, but take the advice and guides with a
+            grain of salt.</p>
+        </div>
+        <div class="container">
+          <h3><a href="https://pixelmob.co/" target="_blank">Pixelmob</a></h3>
+          <p>Description: A useful aggregate site of royalty free images.</p>
+        </div>
+        <div class="container">
+          <h3><a href="https://www.siteinspire.com/" target="_blank">Siteinspire</a></h3>
+          <p>Description: A website with links to sites which have unique and interesting designs.</p>
+        </div>
+        <div class="container">
+          <h3><a href="https://regexr.com/" target="_blank">Regexr</a></h3>
+          <p>Description: A great site for learning and testing out Regular Expressions. Useful for parsing JSON.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>Robert Desjardins, Copyright &copy; 2019</p>
+  </footer>
+</body>
+
+</html>

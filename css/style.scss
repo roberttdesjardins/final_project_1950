@@ -1,0 +1,115 @@
+/* Robert Desjardins */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+$background-color: #eee;
+$nav-background-color: #1e1e1e;
+$text-color-light: #ffffff;
+
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  margin: 0;
+  background: $background-color;
+  height: auto;
+}
+
+main {
+  padding: 1rem 0 0 0;
+  max-width: 1000px;
+  margin: auto;
+  padding-bottom: 2rem;
+  box-shadow: 30px 0 40px rgba(0, 0, 0, 0.15), -30px 0 40px rgba(0, 0, 0, 0.15);
+}
+
+/* General */
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Navigation */
+header {
+  background-color: $nav-background-color;
+  height: 3rem;
+  width: 100vw;
+  position: fixed;
+
+  #branding {
+    float: left;
+    color: $text-color-light;
+    text-transform: uppercase;
+    padding-left: 2rem;
+  }
+
+  nav {
+
+    padding-top: 1rem;
+    float: right;
+
+    ul {
+      margin: auto;
+
+      li {
+        display: inline;
+
+      }
+
+      a {
+        color: #ffffff;
+        text-transform: uppercase;
+        font-size: 16px;
+        padding: 0 1.3rem 0 1.3rem;
+        transition-duration: 300ms;
+
+        &:hover {
+          color: orange;
+
+        }
+      }
+    }
+  }
+}
+
+/* About */
+#about {
+  #about-container {
+    display: flex;
+    margin-top: 50px;
+  }
+
+  #about-text {
+    flex: 0 1 60vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-right: 1rem;
+  }
+
+  #about-img {
+    flex: 0 1 40vw;
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Resources */
+#resources {
+  padding-top: 30px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+}
+
+.error_message {
+  padding-top: 3rem;
+  text-align: center;
+}
+
